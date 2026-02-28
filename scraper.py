@@ -28,9 +28,17 @@ def download_pdf(url, folder):
         print(f"Successfully downloaded: {file_name}")
     except Exception as e:
         print(f"Failed to download {url}: {e}")
+#
+#user_input = input("PDF Finder: ")
+#links = get_pdf_links(user_input)
+#
+#for link in links:
+#    download_pdf(link, SAVE_FOLDER)
+#
+def aiallin(q, fold):
+    linklist = get_pdf_links(q)
+    for link in linklist:
+        download_pdf(link, fold)
 
-user_input = input("PDF Finder: ")
-links = get_pdf_links(user_input)
 
-for link in links:
-    download_pdf(link, SAVE_FOLDER)
+
